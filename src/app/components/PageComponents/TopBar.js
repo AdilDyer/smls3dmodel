@@ -1,6 +1,15 @@
+"use client";
 import React from "react";
 import TransparentButton from "../UiComponents/TransparentButton";
+import { usePathname } from "next/navigation";
 const TopBar = () => {
+  const pathname = usePathname();
+
+  // Specify the routes where you want to hide the TopBar
+  const hiddenRoutes = ["/fullcanvas"];
+  if (hiddenRoutes.includes(pathname)) {
+    return null;
+  }
   return (
     <div className="topBar">
       <div className="leftPart">

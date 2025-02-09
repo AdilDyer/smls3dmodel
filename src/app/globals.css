@@ -447,7 +447,7 @@ html::-webkit-scrollbar {
 /*  */
 /* full canvas page  */
 .fullCanvas {
-  width: 70vw;
+  /* width: 70vw;
   height: 100vh;
   background-color: black;
   display: flex;
@@ -462,6 +462,34 @@ html::-webkit-scrollbar {
     .model {
       width: 50%;
       height: 50%;
+    }
+  } */
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .canvas {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .rightPart {
+    width: 40%;
+    height: 100%;
+    padding: 1rem;
+
+    .rightPartInner {
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0 0 5px rgba(83, 83, 83, 0.15);
+      height: 100%;
+      width: 100%;
+      color: black;
+      padding: 3rem;
+      border-radius: 0.8rem;
     }
   }
 }
